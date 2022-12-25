@@ -302,6 +302,11 @@ section {
 	margin-bottom: 10px;	
 }
 
+.features__card-text {
+	text-align: center;
+	line-height: 1.2;
+}
+
 /* Reviews */
 .review {
 	display: flex;
@@ -362,6 +367,30 @@ section {
 
 .review__author {
 	text-align: right;
+}
+
+/* Price */
+.price__card-title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+	align-self: flex-start;
+}
+
+.cost {
+	align-self: flex-end;
+	font-size: 20px;
+}
+
+.cost-old {
+	font-size: 16px;
+	text-decoration: line-through;
+	text-align: right;
+	line-height: 1.5;
+}
+
+.cost-new {
+	margin-bottom: 15px;
 }
 
 /* Registration */

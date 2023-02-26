@@ -33,7 +33,8 @@ anchors.forEach(function (item) {
 });
 
 // Появление блока header
-let introHeight = document.querySelector('.intro').scrollHeight;
+
+let introHeight = document.querySelector('.intro')?.scrollHeight;
 let lastScroll = window.scrollY;
 document.addEventListener('scroll', () => {
 	let scrollTop = window.scrollY;
@@ -46,7 +47,15 @@ document.addEventListener('scroll', () => {
 	} else {
 		header.classList.remove('hide');
 	}
+
+	if (!introHeight && scrollTop < lastScroll) {
+		header.classList.add('hide');
+	} else {
+		header.classList.remove('hide');
+	
+	}
 	
 	lastScroll = scrollTop;
 });
+
 
